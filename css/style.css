@@ -1,0 +1,127 @@
+:root{
+       
+    --primary-color: #D90410;
+    --secondary-color: #000000;
+    --secondary-light-color: hsla(0, 0%, 0%, 0.5);
+    --font-color: #FFF; 
+
+    --color: #C21F40;
+    }
+
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        color: #d1ccc0;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        background-image: url('../images/two women.jpg');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        height: 100%;
+        font-size: 16px;
+
+    }
+    h1 {
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: var(--color);
+        font-family: 'Raleway', sans-serif;
+    }
+    .main {
+        background-color: hsla(351, 100%, 96%, 0.5);
+        padding: 1rem;
+        width: 50%;
+        margin: 1em auto;
+    }
+    .input, select, .btn {
+        width: 80%;
+        padding: 1rem;
+        margin: 2rem auto 0;
+        display: block;
+        border: none;
+        border-bottom: 3px groove var(--primary-color);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        outline: none;
+    }
+    .input::placeholder {
+        color: var(--secondary-color);
+        font-weight: 700;
+    }
+    [placeholder]:focus::placeholder {
+        transition: opacity 0.5s 0.5s ease;
+        opacity: 0;
+    }
+    /* input[type="date"]:focus::-webkit-datetime */
+    option {
+        line-height: 1.9;
+        font-style: normal;
+        text-shadow: 1px 1px #ddd;
+        letter-spacing: 2px;
+        color: var(--secondary-color);
+    }
+    .btn {
+        background-color: var(--primary-color);
+        color: #FFF;
+        font-weight: 700;
+        border-radius: 5px;
+    }
+
+    .btn:hover {
+        transform: scaleY(0.98);
+        cursor: pointer;
+        background-color: rgba(255, 5, 22, 0.9);
+    }
+
+    .success-class {
+        border-bottom: 3px groove rgba(50, 245, 50, 0.9);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        outline: none;
+    }
+    .error-class {
+        border: 1px solid rgba(255, 5, 22, 0.9);
+    }
+
+    .errorclass {
+        color: rgb(211, 6, 19);
+        text-align: left;
+        position: relative;
+        bottom: 0px;
+        left: 10%;
+        right: 10%;
+        width: 80%;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 0.7em;
+    }
+    
+    @media (max-width: 800px) {
+        .main {
+            width: 80%;
+        }
+
+        h1 {
+            font-size: 1.5em;
+        }
+    }
+
+    @media (max-width: 375px) {
+        .main {
+            width: 100%;
+            margin: 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 1em;
+            width: 100%;
+            font-weight: 700;
+        }
+        .input, select, .btn {
+        width: 90%;
+        }
+    }

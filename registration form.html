@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="main">
+        <h1>CODECAMP PROGRAM</h1>
+        <form action="/" method="post" onsubmit="return validateForm()">
+
+            <label for="fullname">
+                <input type="text" class="input" name="fullname" id="fullname" placeholder="Fullname" >
+            </label>
+            <p class="errorname errorclass"></p>
+            <label for="Age">
+                <input type="number" class="input options" name="Age" min="15" max="35" id="age" placeholder="Age">
+            </label>
+            <p class="errorinput errorclass"></p>
+            <select name="gender" id="gender" class="options" >
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <p class="errorinput errorclass"></p>
+
+            <label for="email">
+                <input type="text" class="input" name="email" id="email" placeholder="Email" >
+            </label>
+            <p class="erroremail errorclass"></p>
+            <label for="password">
+                <input type="password" class="input" name="password" id="password" placeholder="Choose password" >
+            </label>
+            <p class="errorpassword errorclass"></p>
+            
+            <select name="courses" id="courses" class="options" >
+                <option value="">Choose your preferable track</option>
+                <option value="FrontEnd Development">FrontEnd Development</option>
+                <option value="BackEnd Development">BackEnd Development</option>
+                <option value="FullStack Development">FullStack Development</option>
+            </select>
+            <p class="errorinput errorclass"></p>
+
+            <input type="submit" value="Register" class="btn"></input>
+        </form>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
